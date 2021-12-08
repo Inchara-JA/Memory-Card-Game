@@ -196,7 +196,7 @@ img {
   /* animation: pulse 1s; */
 }
 .match img {
-  background: rgb(255, 255, 255);
+  background: #92abd4;
 }
 @keyframes pulse {
   0% {
