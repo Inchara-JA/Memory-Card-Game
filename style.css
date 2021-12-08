@@ -12,7 +12,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: url('');
+  background: url("img/02.png");
   font-family: "Open Sans", sans-serif;
   font-size: 62.5%;
   letter-spacing: 1.5px;
@@ -38,14 +38,11 @@ ul > li {
   /* border-radius: 1em; */
   border: none;
   color: #fff;
-  /* box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5); */
   padding: 0.5em;
-  /* padding-top:0.5em; */
 }
 
-/*----------------------------------  
-Header
-------------------------------------*/
+/* Header */
+
 h1 {
   font-size: 3em;
   font-weight: 400;
@@ -63,9 +60,8 @@ h3 {
 
 
 
-/*----------------------------------  
-Section - Score Panel
-------------------------------------*/
+/* Section - Score Panel */
+
 .score-panel {
   font-size: 1.4em;
   /* padding: 1em 0 2em; */
@@ -85,32 +81,16 @@ Section - Score Panel
 }
 .reset-btn {
   background: #000;
-  /* text-align: right;
-  justify-content:right;
-  align-items:right; */
+  border-radius: 7px;
+  margin-bottom: 15px;
 }
-
-/* .moves{
-  text-align: left;
-  margin-right: 10em;
-} */
 
 .timer-container {
-  background: #fff;
-  border-radius: 0.5em;
   color: #000;
-  margin-right: 11rem;
-  /* font-size: 20px; */
-  /* margin: 0.5em; */
-  /* padding: 0.5em; */
 }
-/* .timer {
-  font-size: 1em;
-} */
 
-/*----------------------------------  
-Section - Modal
-------------------------------------*/
+/* Section - Modal */
+
 /* Modal (background) */
 .modal {
   /*Hidden by default */
@@ -121,11 +101,10 @@ Section - Modal
   top: 0;
   width: 100%;
   height: 100%;
-  /* Fallback color */
   background-color: rgb(46, 61, 73);
-  /* With opacity */
   background-color: rgba(46, 61, 73, 0.6);
 }
+
 /* Modal Content/Box */
 .modal-content {
   display: flex;
@@ -133,12 +112,10 @@ Section - Modal
   justify-content: center;
   align-items: center;
   background-color: rgb(223, 219, 219);
-  /* 5% from the top and centered */
   margin: 5% auto;
-  /* border: 0.8em solid #fc4; */
-  padding-right: 2em;
   width: 60%;
 }
+
 /* The Close Button */
 .close {
   align-self: flex-end;
@@ -169,12 +146,11 @@ p.stats:last-child {
   margin-bottom: 1em;
 }
 
-/*----------------------------------  
-Deck of Cards
-------------------------------------*/
-/*Mobile first responsivness*/
+/*   Deck of Cards */
+
+/*Mobile view*/
+
 .deck {
-  /* background: linear-gradient(to bottom, rgb(255, 255, 255), #28e); */
   color: #fff;
   border-radius: 1.5em;
   display: flex;
@@ -182,24 +158,17 @@ Deck of Cards
   justify-content: space-around;
   align-items: center;
   height: 25em;
-  margin-bottom: 6em;
-  /* padding: 0.5em; */
-  width: 35em;
+  width: 30em;
+  margin-right: 14%;
 }
-/* .deck,
+
 .card {
-  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-} */
-.card {
-  background: rgb(126, 140, 156);
+  background: rgb(212, 211, 211);
   border-radius: 10em;
   height: 6em;
   width: 6em;
 }
-/*
-To disable the color highlight if and img is clicked
-https://stackoverflow.com/questions/21107439/disable-or-change-firefoxs-element-image-highlight-color
-*/
+
 img {
   user-select: none;
   width: 6em;
@@ -208,14 +177,14 @@ img {
   visibility: hidden;
 }
 .deck .card.flip {
-  background: #fff;
+  background: #92abd4;
   cursor: default;
   transform: rotateY(180deg);
   transition: transform 0.3s linear;
   pointer-events: none;
 }
 .flip img {
-  background: #fff;
+  background: #92abd4;
   visibility: visible;
 }
 .deck .card.match {
@@ -242,15 +211,11 @@ img {
 @media screen and (min-width: 550px) {
   .deck  {
     height: 50em;
-    padding: 2em;
-    width: 50em;
   }
   .card {
     height: 10em;
     width: 10em;
-  }
-  .deck img {
-    width: 9em;
+
   }
   .modal-content h2 {
     font-size: 4em;
@@ -264,32 +229,19 @@ img {
   }
   .reset-btn {
     background: #000;
-    /* text-align: right;
-    justify-content:right;
-    align-items:right; */
-  }
-  
-  .moves{
-    /* text-align: left; */
-    /* margin-right: em; */
+    /* margin-top: 2px; */
   }
   
   .timer-container {
-    background: #fff;
-    border-radius: 0.5em;
+    background: rgb(172, 21, 21);
+    /* border-radius: 0.5em; */
     color: #000;
-    /* margin-right: 1rem; */
     font-size: 10px;
-    /* margin: 0.5em; */
-    /* padding: 0.5em; */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    margin-top: 5%;
   }
 }
-/*---------------------------------- 
-Desktops
-------------------------------------*/
+/* Desktops */
 @media screen and (min-width: 800px) {
   
   h1 {
@@ -301,6 +253,7 @@ Desktops
   .deck  {
     height: 60em;
     width: 65em;
+    margin-left: 12%;
   }
   .card {
     height: 13em;
@@ -310,7 +263,7 @@ Desktops
     width: 13em;
   }
   .reset-btn {
-    font-size: 0.8em;
+    font-size: 1.5em;
   }
   .footer {
     font-size: 1.2em;
@@ -319,7 +272,7 @@ Desktops
   .modal-content h2 {
     font-size: 5em;
   }
-  /* Modal Image*/
+  
   .modal-img {
     width: 30em;
   }
@@ -328,24 +281,23 @@ Desktops
   }
   .reset-btn {
     background: #000;
-    text-align: right;
-    justify-content:right;
-    align-items:right;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    /* height:30%; */
+    width: 61%;
   }
   
   .moves{
-    text-align: left;
-    margin-right: 10em;
+    margin:10px auto;
   }
   
   .timer-container {
-    background: #fff;
-    border-radius: 0.5em;
+    background: #92abd4;
     color: #000;
-    margin-right: 11rem;
+    /* margin-right: 11rem; */
     font-size: 20px;
-    /* margin: 0.5em; */
-    /* padding: 0.5em; */
+    margin: 0.5em;
   }
 }
 
